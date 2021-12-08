@@ -1,0 +1,90 @@
+.header {
+  padding-top: 40px;
+
+  &__container {
+    @include flex_c-betw;
+    position: relative;
+    height: 48px;
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+
+  &__logo,
+  &__menu {
+    color: $blue02;
+
+    &:hover,
+    &:active {
+      color: $blue01;
+    }
+  }
+
+  &__logo-icon {
+    color: inherit;
+    width: 48px;
+    height: 32px;
+  }
+
+  &__menu {
+    @include flex_c-c;
+    padding: 0;
+  }
+
+  &__btn-icon {
+    color: inherit;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__nav {
+    @include flex($dir: column, $align: baseline, $r-gap: 10px);
+    position: absolute;
+    top: 38px;
+    right: 83px;
+    gap: 10px;
+    background-color: $blue05;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 101;
+    // visibility: visible;
+    // transform: translateX(0);
+    // opacity: 1;
+    visibility: hidden;
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  &__nav-item {
+
+  }
+  &__nav-link {
+    @include nav-text;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      color: $blue01;
+    }
+  }
+}
+
+.isOpen {
+  visibility: visible;
+  transform: translateX(0);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.next {
+  height: 500px;
+  background-color: gray;
+
+}
+.prev {
+  height: 1000px;
+  background-color: aquamarine;
+}
+.three {
+  height: 1000px;
+  background-color: blue;
+}

@@ -1,0 +1,14 @@
+body {
+  font: {
+    family: Gilroy;
+    style: normal;
+    weight: 400;
+    size: 16px;
+  }
+}
+
+.container {
+  width: min(100%, 1366px);
+  margin: 0 auto;
+  height: 200px;
+}

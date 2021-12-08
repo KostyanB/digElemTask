@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* reset styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  vertical-align: middle;
+  background: transparent;
+  background-color: none;
+  border: none;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ol,
+ul,
+li,
+nav {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* end reset */
+/* шрифты*/
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("fonts/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy-Regular.woff") format("woff"), url("fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Galien";
+  src: local("Galien Regular"), local("Galien-Regular"), url("fonts/Galien-Regular.woff2") format("woff2"), url("fonts/Galien-Regular.woff") format("woff"), url("fonts/Galien-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  width: min(100%, 1366px);
+  margin: 0 auto;
+  height: 200px;
+}
+
+.header {
+  padding-top: 40px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+  -webkit-column-gap: unset;
+     -moz-column-gap: unset;
+          column-gap: unset;
+  position: relative;
+  height: 48px;
+  padding-left: 83px;
+  padding-right: 83px;
+}
+.header__logo, .header__menu {
+  color: #316099;
+}
+.header__logo:hover, .header__logo:active, .header__menu:hover, .header__menu:active {
+  color: #1F3F68;
+}
+.header__logo-icon {
+  color: inherit;
+  width: 48px;
+  height: 32px;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+  -webkit-column-gap: unset;
+     -moz-column-gap: unset;
+          column-gap: unset;
+  padding: 0;
+}
+.header__btn-icon {
+  color: inherit;
+  width: 32px;
+  height: 32px;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  row-gap: 10px;
+  -webkit-column-gap: unset;
+     -moz-column-gap: unset;
+          column-gap: unset;
+  position: absolute;
+  top: 38px;
+  right: 83px;
+  gap: 10px;
+  background-color: #98C3E8;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 101;
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+}
+.header__nav-link {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #316099;
+  opacity: 1;
+  cursor: pointer;
+}
+.header__nav-link:hover, .header__nav-link:active {
+  color: #1F3F68;
+}
+
+.isOpen {
+  visibility: visible;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.next {
+  height: 500px;
+  background-color: gray;
+}
+
+.prev {
+  height: 1000px;
+  background-color: aquamarine;
+}
+
+.three {
+  height: 1000px;
+  background-color: blue;
+}
