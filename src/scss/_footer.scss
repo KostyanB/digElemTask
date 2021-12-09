@@ -1,0 +1,134 @@
+.footer {
+
+  &__container {
+    background-color: $blue04;
+    padding-right: min(7vw, 96px);
+  }
+
+  &__subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    row-gap: 64px;
+    background-color: $blue02;
+    padding-top: 96px;
+    padding-right: clamp(20px, 23.4vw, 320px);
+    padding-bottom: 64px;
+    padding-left: clamp(20px, 15.7vw, 214px);
+
+    @media (max-width: 768px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    column-gap: min(7.3vw, 100px);
+
+    @media (max-width: 768px) {
+      align-items: center;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 100%;
+    }
+  }
+
+  &__nav-wrapper {
+    display:flex;
+    column-gap: clamp(10px, 5.6vw, 77px);
+
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 16px;
+  }
+
+  &__nav-item {
+    width: max-content;
+  }
+
+  &__nav-link {
+    @include main_text_footer;
+
+    &:hover,
+    &:active {
+      color: $blue05;
+    }
+  }
+
+  &__nav-title {
+    @include title3_white;
+
+    width: max-content;
+    margin-bottom: 32px;
+  }
+
+  &__sign {
+    @include sign_text;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+.contacts {
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 33px;
+  }
+
+  &__logo-icon {
+    color: inherit;
+    width: 48px;
+    height: 32px;
+  }
+
+  &__logo-link {
+    @include logo_text;
+
+    &:hover,
+    &:active {
+      color: $blue05;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 16px;
+    max-width: 299px;
+
+    @include main_text_footer;
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:active {
+        color: $blue05;
+      }
+    }
+  }
+}

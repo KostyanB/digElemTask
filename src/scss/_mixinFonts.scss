@@ -30,9 +30,7 @@
     @include font;
 }
 
-@mixin main_text_sign {
-    @include font($op: 0.4);
-}
+
 //  titles
 // h1
 @mixin title1 {
@@ -113,4 +111,7 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
         $line: 1.5,
         $col: $blue02
     );
+}
+@mixin sign_text {
+    @include font($op: 0.4);
 }

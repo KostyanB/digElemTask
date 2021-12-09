@@ -5,12 +5,12 @@ body {
     weight: 400;
     size: 16px;
   }
+  min-width: 320px;
 }
 
 .container {
   width: min(100%, 1366px);
   margin: 0 auto;
-  height: 200px;
 }
 
 .one {
@@ -21,8 +21,4 @@ body {
 .two {
   height: 1000px;
   background-color: aquamarine;
-}
-.three {
-  height: 1000px;
-  background-color: blue;
 }

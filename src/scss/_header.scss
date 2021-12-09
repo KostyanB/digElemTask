@@ -2,32 +2,31 @@
   padding-top: 40px;
 
   &__container {
-    @include flex_c-betw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     height: 48px;
     padding-left: 83px;
     padding-right: 83px;
   }
 
-  &__logo,
-  &__menu {
-    color: $blue02;
-
-    &:hover,
-    &:active {
-      color: $blue01;
-    }
-  }
-
   &__logo-icon {
-    color: inherit;
     width: 48px;
     height: 32px;
   }
 
   &__menu {
-    @include flex_c-c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
+    color: $blue02;
+
+    &:hover,
+    &:active {
+      color: $blue05;
+    }
   }
 
   &__btn-icon {
@@ -37,7 +36,12 @@
   }
 
   &__nav {
-    @include flex($dir: column, $align: baseline, $r-gap: 10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    row-gap: 10px;
+
     position: absolute;
     top: 38px;
     right: 83px;
@@ -51,9 +55,6 @@
     opacity: 0;
   }
 
-  &__nav-item {
-
-  }
   &__nav-link {
     @include nav-text;
     cursor: pointer;

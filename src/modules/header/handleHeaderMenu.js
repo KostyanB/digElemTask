@@ -1,6 +1,6 @@
 import smoothScroll from "../helpers/smoothScroll";
 
-const toggleMenu = () => {
+const handleHeaderMenu = () => {
   const headerNav = document.querySelector('.header__nav');
 
   const toggleMenu = () => headerNav.classList.toggle('isOpen');
@@ -26,4 +26,4 @@ const toggleMenu = () => {
 
   document.addEventListener('click', e => handleMenu(e));
 }
-export default toggleMenu;
+export default handleHeaderMenu;

@@ -7,7 +7,7 @@ const drawHeaderNav = () => {
 
   headerNav.innerHTML = prepareListHtml({
     arr: linksArr,
-    prefix: 'header__'
+    prefix: 'header__',
   });
 };
 export default drawHeaderNav;

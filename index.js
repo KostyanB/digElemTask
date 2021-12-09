@@ -1,9 +1,14 @@
 import './src/css/style.css';
 import drawHeaderNav from './src/modules/header/drawHeaderNav';
-import toggleMenu from './src/modules/header/toggleMenu';
+import handleHeaderMenu from './src/modules/header/handleHeaderMenu';
+import drawFooterNav from './src/modules/footer/drawFooterNav';
+import handleFooterScroll from './src/modules/footer/handleFooterScroll';
 
 // header
 drawHeaderNav();
-toggleMenu();
+handleHeaderMenu();
+//footer
+drawFooterNav();
+handleFooterScroll();
 
 
