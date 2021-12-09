@@ -44,11 +44,8 @@
     gap: 10px;
     background-color: $blue05;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     z-index: 101;
-    // visibility: visible;
-    // transform: translateX(0);
-    // opacity: 1;
     visibility: hidden;
     transform: translateX(-100%);
     opacity: 0;
@@ -73,18 +70,4 @@
   transform: translateX(0);
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-.next {
-  height: 500px;
-  background-color: gray;
-
-}
-.prev {
-  height: 1000px;
-  background-color: aquamarine;
-}
-.three {
-  height: 1000px;
-  background-color: blue;
 }

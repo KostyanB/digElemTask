@@ -188,6 +188,21 @@ body {
   height: 200px;
 }
 
+.one {
+  height: 500px;
+  background-color: gray;
+}
+
+.two {
+  height: 1000px;
+  background-color: aquamarine;
+}
+
+.three {
+  height: 1000px;
+  background-color: blue;
+}
+
 .header {
   padding-top: 40px;
 }
@@ -274,7 +289,7 @@ body {
   gap: 10px;
   background-color: #98C3E8;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   z-index: 101;
   visibility: hidden;
   -webkit-transform: translateX(-100%);
@@ -303,19 +318,4 @@ body {
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-
-.next {
-  height: 500px;
-  background-color: gray;
-}
-
-.prev {
-  height: 1000px;
-  background-color: aquamarine;
-}
-
-.three {
-  height: 1000px;
-  background-color: blue;
 }
