@@ -1,13 +1,13 @@
 // fonts
 @mixin font(
-    $size: 16,
+    $size: 16px,
     $line: 1.62,
     $letter: 0.05,
     $col: #fff,
     $op: 1
 
 ) {
-    font-size: #{$size}px;
+    font-size: $size;
     line-height: $line;
     letter-spacing: #{$letter}em;
     color: $col;
@@ -35,7 +35,7 @@
 // h1
 @mixin title1 {
     @include font(
-        $size: 64,
+        $size: 64px,
         $line: 1.16,
         $letter: 0.04,
         $col: $blue01
@@ -43,7 +43,12 @@
     font-family: Galien;
 }
 //  h2
-$title2-map: (size: 36, line: 1.28, letter: 0.05);
+$title2-map: (
+    // size: 36px,
+    size: clamp(24px, 2.6vw, 36px),
+    line: 1.28,
+    letter: 0.05
+);
 
 @mixin title2_blue {
     @include font(
@@ -61,7 +66,7 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
 //  h3
 @mixin title3_blue {
     @include font(
-        $size: 20,
+        $size: 20px,
         $line: 1.58,
         $col: $blue01
     );
@@ -69,7 +74,7 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
 
 @mixin title3_white {
     @include font(
-        $size: 20,
+        $size: 20px,
         $line: 1.5,
         $col: $white
     );
@@ -77,7 +82,7 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
 // other fonts
 @mixin logo_text {
     @include font(
-        $size: 28,
+        $size: 28px,
         $line: 1.64,
         $letter: 0.02,
         $col: $white
@@ -86,7 +91,7 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
 
 @mixin client_text {
     @include font(
-        $size: 29,
+        $size: 29px,
         $line: 2.3,
         $letter: 0.02,
         $col: $white
@@ -100,14 +105,14 @@ $title2-map: (size: 36, line: 1.28, letter: 0.05);
 
 @mixin more_text {
     @include font(
-        $size: 14,
+        $size: 14px,
         $line: 2.14,
         $col: $blue04
     );
 }
 @mixin nav-text {
     @include font(
-        $size: 20,
+        $size: 20px,
         $line: 1.5,
         $col: $blue02
     );

@@ -1,0 +1,57 @@
+.lets-talk {
+  &__container {
+    background-color: $blue04;
+    padding-right: min(7vw, 96px);
+  }
+
+  &__subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: clamp(20px, 13vw, 180px);
+    background-color: $blue02;
+    padding-top: 91px;
+    padding-right: clamp(20px, 14.4vw, 197px);
+    padding-bottom: 96px;
+    padding-left: clamp(20px, 15.7vw, 213px);
+    border-top-right-radius: 200px;
+
+    @media (max-width: 768px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    @media (max-width: 576px) {
+      border-top-right-radius: 100px;
+    }
+  }
+
+  &__article {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    row-gap: 32px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    max-width: 320px;
+    @include title2_white;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    max-width: 460px;
+    @include main_text_white;
+  }
+}
