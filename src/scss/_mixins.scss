@@ -1,0 +1,7 @@
+$clamp: clamp(20px, 15vw, 213px);
+
+@mixin paddings {
+  padding-top: 96px;
+  padding-right: $clamp;
+  padding-left: $clamp;
+}

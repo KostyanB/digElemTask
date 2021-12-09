@@ -1,0 +1,55 @@
+.contacts {
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 33px;
+  }
+
+  &__logo-icon {
+    color: inherit;
+    width: 48px;
+    height: 32px;
+  }
+
+  &__logo-link {
+    @include logo_text;
+
+    &:hover,
+    &:active {
+      color: $blue05;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 16px;
+    max-width: 299px;
+
+    @include main_text_footer;
+
+    span {
+      font-weight: 600;
+    }
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:active {
+        color: $blue05;
+      }
+    }
+  }
+}

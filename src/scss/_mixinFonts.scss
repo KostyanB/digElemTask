@@ -110,6 +110,7 @@ $title2-map: (
         $col: $blue04
     );
 }
+
 @mixin nav-text {
     @include font(
         $size: 20px,
@@ -117,6 +118,16 @@ $title2-map: (
         $col: $blue02
     );
 }
+
 @mixin sign_text {
     @include font($op: 0.4);
+}
+
+@mixin form_text {
+    @include font(
+        $line: 1.87,
+        $letter: 0.04,
+        $col: $blue01,
+        $op: 0.8
+    );
 }

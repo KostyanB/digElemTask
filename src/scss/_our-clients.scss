@@ -1,0 +1,36 @@
+.clients {
+  &__container {
+    background-color: $blue04;
+    border-top-left-radius: 200px;
+    @include paddings;
+    // padding-top: 91px;
+    // padding-right: clamp(20px, 15vw, 213px);
+    padding-bottom: 125px;
+    // padding-left: clamp(20px, 15vw, 213px);
+
+    @media (max-width: 576px) {
+      border-top-left-radius: 100px;
+    }
+  }
+
+  &__article {
+    flex-direction: row;
+    column-gap: clamp(10px, 5vw, 97px);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 10px;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  &__title {
+    max-width: 225px;
+  }
+
+  &__text {
+    max-width: 540px;
+  }
+
+
+}

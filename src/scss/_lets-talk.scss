@@ -10,10 +10,11 @@
     align-items: center;
     column-gap: clamp(20px, 13vw, 180px);
     background-color: $blue02;
-    padding-top: 91px;
-    padding-right: clamp(20px, 14.4vw, 197px);
+    @include paddings;
+    // padding-top: 91px;
+    // padding-right: clamp(20px, 15vw, 213px);
     padding-bottom: 96px;
-    padding-left: clamp(20px, 15.7vw, 213px);
+    // padding-left: clamp(20px, 15vw, 213px);
     border-top-right-radius: 200px;
 
     @media (max-width: 768px) {
@@ -29,7 +30,6 @@
   }
 
   &__article {
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex-direction: column;
@@ -43,15 +43,9 @@
 
   &__title {
     max-width: 320px;
-    @include title2_white;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
   }
 
   &__text {
     max-width: 460px;
-    @include main_text_white;
   }
 }

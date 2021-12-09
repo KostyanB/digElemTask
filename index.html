@@ -26,16 +26,30 @@
 			</ul>
 		</div>
 	</header>
+	<!-- Our clients -->
+	<section class="clients section" id="our-clients">
+		<div class="clients__container container">
+			<article class="clients__article section__article">
+				<h1 class="clients_title section__title">
+					Our Beloved Client
+				</h1>
+				<main class="clients__text section__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					magna aliqua. Ut enim ad minim veniam.
+				</main>
+			</article>
 
+		</div>
+	</section>
 	<!-- lets-talk -->
-	<section class="lets-talk" id="lets-talk">
+	<section class="lets-talk section" id="lets-talk">
 		<div class="lets-talk__container container">
 			<div class="lets-talk__subcontainer">
-				<article class="lets-talk__article">
-					<h1 class="lets-talk__title">
+				<article class="lets-talk__article section__article">
+					<h1 class="lets-talk__title section__title">
 						Intersted to woek with our team?
 					</h1>
-					<main class="lets-talk__text">
+					<main class="lets-talk__text section__text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna aliqua. Ut enim ad minim veniam.
 					</main>
@@ -101,31 +115,39 @@
 	<!-- Modal -->
 	<div class="popup">
 		<div class="popup__overlay" id="send-popup">
-		</div>
-		<div class="popup__wrapper">
-			<button class="popup__close"></button>
-			<div class="popup__content">
-				<form class="popup__form form" name="popup__form" id="popup__form" action="#" method="post">
-					<h3>SEND US MESSAGE</h3>
-					<label for="name" class="form__label">Full Name</label>
-					<input class="form__name" name="name" type="text" />
-					<label for="email" class="form__label">E-mail</label>
-					<input class="form__email" type="email" name="email" id="form__email" />
-
-					<button name="submit" class="form__button main-button" type="submit" form="popup__form">SUBMIT</button>
-				</form>
+			<div class="popup__wrapper">
+				<button class="popup__close"></button>
+				<div class="popup__content">
+					<form class="popup__form form" name="popup__form" id="popup__form" action="#" method="post">
+						<legend class="form__legend">SEND US MESSAGE</legend>
+						<label for="name" class="form__label">
+							Full Name
+							<input class="form__name" name="name" type="text" />
+						</label>
+						<label for="email" class="form__label">
+							E-mail
+							<input class="form__email" type="email" name="email" id="form__email" />
+						</label>
+						<label for="msg" class="form__label">
+							Message
+							<textarea class="form__msg" id="form__msg" name="msg"></textarea>
+						</label>
+						<button name="submit" class="form__button main-button" type="submit" form="popup__form">SUBMIT</button>
+					</form>
+				</div>
 			</div>
 		</div>
+
 	</div>
 	<div class="popup">
 		<div class="popup__overlay" id="message-popup">
-		<div class="popup__wrapper">
-			<button class="popup__close"></button>
-			<div class="popup__content">
-				<h3 class="popup__message">Your message successfully sent</h3>
+			<div class="popup__wrapper">
+				<button class="popup__close"></button>
+				<div class="popup__content">
+					<h3 class="popup__message">Your message successfully sent</h3>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 	<!-- SVG-sprite -->
 	<svg width="0" height="0" class="hidden" hidden="true">
@@ -156,7 +178,8 @@
 			</path>
 		</symbol>
 
-		<symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+		<symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+			stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
 			<title id="close-title">Close</title>
 			<line x1="18" y1="6" x2="6" y2="18" />
 			<line x1="6" y1="6" x2="18" y2="18" />

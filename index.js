@@ -15,7 +15,5 @@ handleFooterScroll();
 //popup
 handleOpenPopup();
 
-document.getElementById('123').addEventListener('click', () => {
-  const asd = document.getElementById('message-popup');
-  openPopup(asd);
-});
+document.getElementById('123').addEventListener('click', () =>
+  openPopup(document.getElementById('message-popup')));

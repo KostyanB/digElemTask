@@ -1,0 +1,44 @@
+.form {
+
+  &__legend {
+    @include title3_blue;
+    font-weight: 600;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    column-gap: 8px;
+    @include form_text;
+  }
+
+  &__name,
+  &__email,
+  &__msg,
+  &__button {
+    width: min(95vw, 428px);
+
+  }
+
+  &__name,
+  &__email,
+  &__msg {
+    border: 1px solid $blue03;
+    border-radius: 10px;
+    padding: 21px 42px;
+    font: inherit;
+    color: $blue02;
+  }
+
+  &__msg {
+    min-height: 144px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $blue03;
+      border-radius: 100px;
+    }
+  }
+}
