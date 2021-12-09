@@ -36,7 +36,8 @@
 						Intersted to woek with our team?
 					</h1>
 					<main class="lets-talk__text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam.
 					</main>
 				</article>
 				<button class="lets-talk__btn main-button">
@@ -93,9 +94,39 @@
 		</div>
 	</footer>
 
-	<div class="one container" id="one"></div>
+	<div class="one container" id="one">
+		<button class="main-button" id="123">popup</button>
+	</div>
 	<div class="two container" id="two"></div>
+	<!-- Modal -->
+	<div class="popup">
+		<div class="popup__overlay" id="send-popup">
+		</div>
+		<div class="popup__wrapper">
+			<button class="popup__close"></button>
+			<div class="popup__content">
+				<form class="popup__form form" name="popup__form" id="popup__form" action="#" method="post">
+					<h3>SEND US MESSAGE</h3>
+					<label for="name" class="form__label">Full Name</label>
+					<input class="form__name" name="name" type="text" />
+					<label for="email" class="form__label">E-mail</label>
+					<input class="form__email" type="email" name="email" id="form__email" />
 
+					<button name="submit" class="form__button main-button" type="submit" form="popup__form">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup">
+		<div class="popup__overlay" id="message-popup">
+		<div class="popup__wrapper">
+			<button class="popup__close"></button>
+			<div class="popup__content">
+				<h3 class="popup__message">Your message successfully sent</h3>
+			</div>
+		</div>
+	</div>
+	</div>
 	<!-- SVG-sprite -->
 	<svg width="0" height="0" class="hidden" hidden="true">
 		<symbol id="arrow" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -123,6 +154,12 @@
 			<path fill="#316099"
 				d="M38.3 23L33.38 9H29.96L25.06 23H28.04L28.88 20.48H34.46L35.3 23H38.3ZM31.68 12.18L33.6 17.9H29.76L31.68 12.18Z">
 			</path>
+		</symbol>
+
+		<symbol id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+			<title id="close-title">Close</title>
+			<line x1="18" y1="6" x2="6" y2="18" />
+			<line x1="6" y1="6" x2="18" y2="18" />
 		</symbol>
 
 		<symbol id="camera" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 71">
