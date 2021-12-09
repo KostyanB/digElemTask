@@ -1,5 +1,4 @@
 .footer {
-
   &__container {
     background-color: $blue04;
     padding-right: min(7vw, 96px);
@@ -11,6 +10,7 @@
     align-items: baseline;
     flex-direction: column;
     row-gap: 64px;
+    position: relative;
     background-color: $blue02;
     padding-top: 96px;
     padding-right: clamp(20px, 23.4vw, 320px);
@@ -22,6 +22,17 @@
       padding-right: 10px;
     }
   }
+
+  &__border {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 1073px;
+    height: 0px;
+    border: $border;
+    opacity: 0.4;
+  }
+
   &__wrapper {
     display: flex;
     column-gap: min(7.3vw, 100px);
@@ -121,6 +132,10 @@
     max-width: 299px;
 
     @include main_text_footer;
+
+    span {
+      font-weight: 600;
+    }
 
     a {
       color: inherit;

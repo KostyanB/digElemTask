@@ -312,6 +312,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 64px;
+  position: relative;
   background-color: #316099;
   padding-top: 96px;
   padding-right: clamp(20px, 23.4vw, 320px);
@@ -323,6 +324,15 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.footer__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1073px;
+  height: 0px;
+  border: 1px solid #FFF;
+  opacity: 0.4;
 }
 .footer__wrapper {
   display: -webkit-box;
@@ -478,6 +488,9 @@ body {
   letter-spacing: 0.05em;
   color: #fff;
   opacity: 1;
+}
+.contacts__item span {
+  font-weight: 600;
 }
 .contacts__item a {
   color: inherit;
