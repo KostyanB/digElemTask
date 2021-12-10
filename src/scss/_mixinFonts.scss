@@ -91,7 +91,7 @@ $title2-map: (
 
 @mixin client_text {
     @include font(
-        $size: 29px,
+        $size: 20px,
         $line: 2.3,
         $letter: 0.02,
         $col: $white

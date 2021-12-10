@@ -188,16 +188,6 @@ body {
   margin: 0 auto;
 }
 
-.one {
-  height: 500px;
-  background-color: gray;
-}
-
-.two {
-  height: 1000px;
-  background-color: aquamarine;
-}
-
 .main-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,6 +252,16 @@ body {
   letter-spacing: 0.05em;
   color: #fff;
   opacity: 0.6;
+}
+
+.one {
+  height: 500px;
+  background-color: gray;
+}
+
+.two {
+  height: 1000px;
+  background-color: aquamarine;
 }
 
 .header {
@@ -360,6 +360,16 @@ body {
 }
 
 .clients__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #5a98d0;
   border-top-left-radius: 200px;
   padding-top: 96px;
@@ -380,6 +390,7 @@ body {
   -webkit-column-gap: clamp(10px, 5vw, 97px);
      -moz-column-gap: clamp(10px, 5vw, 97px);
           column-gap: clamp(10px, 5vw, 97px);
+  margin-bottom: 111px;
 }
 @media (max-width: 768px) {
   .clients__article {
@@ -399,6 +410,72 @@ body {
 }
 .clients__text {
   max-width: 540px;
+}
+.clients__logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background-color: #FFF;
+}
+@media (max-width: 990px) {
+  .clients__logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .clients__logos {
+    grid-template-columns: 1fr;
+  }
+}
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  max-width: 235px;
+  height: 128px;
+  font-size: 20px;
+  line-height: 2.3;
+  letter-spacing: 0.02em;
+  color: #FFF;
+  opacity: 1;
+  white-space: nowrap;
+  padding-left: clamp(10px, 2.5vw, 40px);
+  padding-right: clamp(10px, 2.5vw, 40px);
+  background-color: #5a98d0;
+}
+.clients__item:last-of-type {
+  padding: 0;
+}
+.clients__btn {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: inherit;
+  background-color: rgba(31, 63, 104, 0.2);
+}
+.clients__btn:hover, .clients__btn:active {
+  background-color: rgba(31, 63, 104, 0.5);
+}
+.clients__btn:hover {
+  color: #98c3e8;
+}
+.clients__btn:active {
+  color: #1f3f68;
 }
 
 .lets-talk__container {
