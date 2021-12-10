@@ -331,9 +331,9 @@ body {
   border-radius: 3px;
   z-index: 101;
   visibility: hidden;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
   opacity: 0;
 }
 .header__nav-link {
@@ -350,13 +350,13 @@ body {
 
 .isOpen {
   visibility: visible;
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .clients__container {
@@ -753,7 +753,9 @@ body {
 }
 
 .popup__overlay {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -772,13 +774,28 @@ body {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  -webkit-animation: fadeIn 300ms ease-in-out;
-          animation: fadeIn 300ms ease-in-out;
+  visibility: hidden;
+}
+.popup__overlay div {
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 .popup__overlay-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.popup__overlay-open div {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .popup__wrapper {
   position: relative;
@@ -874,6 +891,10 @@ body {
     opacity: 1;
   }
 }
+.error-send {
+  color: #ff004c;
+}
+
 .form__legend {
   font-size: 20px;
   line-height: 1.58;

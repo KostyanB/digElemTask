@@ -8,19 +8,16 @@ const handleHeaderMenu = () => {
   const closeMenu = () => headerNav.classList.remove('isOpen');
 
   const handleMenu = e => {
-    e.preventDefault();
-
-    const target = e.target;
     //клик по кнопке меню
-    (target.closest('.header__menu')) && toggleMenu();
+    (e.target.closest('.header__menu')) && toggleMenu();
 
     //клик мимо меню и не по кнопке
-    (!target.closest('.header__nav') && !target.closest('.header__menu')) && closeMenu();
+    (!e.target.closest('.header__nav') && !e.target.closest('.header__menu')) && closeMenu();
 
     //клик по ссылке меню
-    if (target.classList.contains('header__nav-link')) {
+    if (e.target.classList.contains('header__nav-link')) {
       closeMenu();
-      smoothScroll(target);
+      smoothScroll(e);
     }
   };
 

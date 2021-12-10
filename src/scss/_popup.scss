@@ -1,6 +1,6 @@
 .popup {
   &__overlay {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -14,11 +14,22 @@
     overflow-y: auto;
     background: $overlay;
     backdrop-filter: blur(3px);
-    animation: fadeIn 300ms ease-in-out;
+    visibility: hidden;
 
+    div {
+      opacity: 0;
+      transform: scale(0);
+    }
 
     &-open {
-        display: flex;
+      visibility:visible;
+      transition: opacity 0.5s;
+
+      div {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.5s;
+      }
     }
   }
 
@@ -66,7 +77,6 @@
     &:hover::after {
       border-color: $blue05;
     }
-
   }
 
   &__content {
@@ -104,4 +114,8 @@
   to {
     opacity: 1;
   }
+}
+
+.error-send {
+  color: #ff004c;
 }

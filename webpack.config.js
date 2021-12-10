@@ -40,6 +40,7 @@ module.exports = {
 			patterns: [
 				{ from: "./src/img", to: "img" },
 				{ from: "./src/fonts", to: "fonts" },
+				{ from: "./src/db", to: "db" },
 			],
 		}),
 		new MiniCssExtractPlugin({

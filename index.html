@@ -121,38 +121,38 @@
 	</div>
 	<div class="two container" id="two"></div>
 	<!-- Popup form -->
-	<div class="popup">
+	<div class="popup" id="send">
 		<div class="popup__overlay" id="send-popup">
 			<div class="popup__wrapper">
-				<button class="popup__close"></button>
 				<div class="popup__content">
-					<form class="popup__form form" name="popup__form" id="popup__form" action="#" method="post">
+					<button class="popup__close"></button>
+					<form class="popup__form form" name="popup__form" id="popup__form">
 						<legend class="form__legend">SEND US MESSAGE</legend>
-						<label for="name" class="form__label">
+						<label for="form__name" class="form__label">
 							Full Name
-							<input class="form__name" name="name" type="text" />
+							<input class="form__name" name="form__name" type="text" id="form__name"/>
 						</label>
-						<label for="email" class="form__label">
+						<label for="form__email" class="form__label">
 							E-mail
-							<input class="form__email" type="email" name="email" id="form__email" />
+							<input class="form__email" name="form__email" type="text" id="form__email" />
 						</label>
-						<label for="msg" class="form__label">
+						<label for="form__msg" class="form__label">
 							Message
-							<textarea class="form__msg" id="form__msg" name="msg"></textarea>
+							<textarea class="form__msg" id="form__msg" name="form__msg"></textarea>
 						</label>
-						<button name="submit" class="form__button main-button" type="submit" form="popup__form">SUBMIT</button>
+						<button class="form__button main-button" type="submit" form="popup__form" disabled>SUBMIT</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	<!-- Popup message -->
 	</div>
-	<div class="popup">
+	<div class="popup" id="message">
 		<div class="popup__overlay" id="message-popup">
 			<div class="popup__wrapper">
-				<button class="popup__close"></button>
 				<div class="popup__content">
-					<h3 class="popup__message">Your message successfully sent</h3>
+					<button class="popup__close"></button>
+					<h3 class="popup__message"></h3>
 				</div>
 			</div>
 		</div>
