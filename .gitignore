@@ -4,6 +4,7 @@
 /.firebase/
 .firebaserc
 firebase.json
+/draft/
 
 
 read_me.txt
@@ -14,4 +15,3 @@ read_me.txt
 # for server imitation
 server.php
 draft.js
-/draft

@@ -35,7 +35,7 @@
 // h1
 @mixin title1 {
     @include font(
-        $size: 64px,
+        $size: clamp(48px, 4.7vw, 64px),
         $line: 1.16,
         $letter: 0.04,
         $col: $blue01
