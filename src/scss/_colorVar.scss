@@ -12,6 +12,7 @@ $red_grad: linear-gradient(180deg, #EB5757 0%, #872727 100%);
 $violet_grad: linear-gradient(180deg, #AF6CED 0%, #5E199D 100%);
 $border: 1px solid #FFF;
 $overlay: rgba(0, 0, 0, 0.5);
+$card-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
 
 @mixin shadow {
     background: #C4C4C4;

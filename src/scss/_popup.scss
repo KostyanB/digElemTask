@@ -22,7 +22,7 @@
     }
 
     &-open {
-      visibility:visible;
+      visibility: visible;
       transition: opacity 0.5s;
 
       div {
@@ -34,52 +34,18 @@
   }
 
   &__wrapper {
-    position: relative;
+    display: grid;
     max-width: 100%;
-    border-radius: 10px;
-    border: none;
-    background-color: #fff;
-    color: #000;
-    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   }
 
   &__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 3em;
-    height: 3em;
-    color: inherit;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 5px;
-      left: 5px;
-      border-bottom: 1px solid $blue02;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:focus::before,
-    &:hover::before,
-    &:focus::after,
-    &:hover::after {
-      border-color: $blue05;
-    }
+    grid-area: 1/-1;
+    place-self: start end;
+    z-index: 1001;
   }
 
   &__content {
+    grid-area: 1/-1;
     padding: 56px;
 
     @media (max-width: 768px) {
@@ -94,25 +60,16 @@
   }
 
   &__message {
-    @include title3_blue;
+    @include title3;
     font-weight: 600;
     text-align: center;
+    color: $blue01;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 

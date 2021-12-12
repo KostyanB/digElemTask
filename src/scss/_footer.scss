@@ -68,7 +68,7 @@
   }
 
   &__nav-link {
-    @include main_text_footer;
+    @include footer_main_text;
 
     &:hover,
     &:active {
@@ -77,7 +77,7 @@
   }
 
   &__nav-title {
-    @include title3_white;
+    @include footer_title;
 
     width: max-content;
     margin-bottom: 32px;

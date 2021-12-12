@@ -7,7 +7,7 @@ const checkObj = {
 };
 
 const handleSubmitBtn = () => {
-  const formButton = document.querySelector('.form__button');
+  const formButton = document.querySelector('.form__submit');
   if (Object.values(checkObj).every((item) => item)) {
     formButton.removeAttribute('disabled');
   } else {

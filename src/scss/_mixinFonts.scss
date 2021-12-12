@@ -1,133 +1,70 @@
 // fonts
-@mixin font(
-    $size: 16px,
-    $line: 1.62,
-    $letter: 0.05,
-    $col: #fff,
-    $op: 1
-
-) {
-    font-size: $size;
-    line-height: $line;
-    letter-spacing: #{$letter}em;
-    color: $col;
-    opacity: $op;
+@mixin font($size: 16px, $line: 1.62, $letter: 0.05, $op: 0.6) {
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: #{$letter}em;
+  opacity: $op;
 }
 
-// main
-@mixin main_text_blue {
-    @include font(
-        $col: $blue01,
-        $op: 0.6
-    );
+@mixin main_text {
+  @include font;
 }
 
-@mixin main_text_white {
-    @include font($op: 0.6);
-}
-
-@mixin main_text_footer {
-    @include font;
-}
-
-
-//  titles
 // h1
 @mixin title1 {
-    @include font(
-        $size: clamp(48px, 4.7vw, 64px),
-        $line: 1.16,
-        $letter: 0.04,
-        $col: $blue01
-        );
-    font-family: Galien;
+  @include font($size: clamp(48px, 4.7vw, 64px), $line: 1.16, $letter: 0.04, $op: 1);
+  font-family: Galien;
+  color: $blue01;
 }
 //  h2
-$title2-map: (
-    // size: 36px,
-    size: clamp(24px, 2.6vw, 36px),
-    line: 1.28,
-    letter: 0.05
-);
-
-@mixin title2_blue {
-    @include font(
-        $col: $blue02,
-        $title2-map...
-    );
+@mixin title2 {
+  @include font($size: clamp(24px, 2.6vw, 36px), $line: 1.28, $op: 1);
 }
 
-@mixin title2_white {
-    @include font(
-        $col: $white,
-        $title2-map...
-    );
-}
 //  h3
-@mixin title3_blue {
-    @include font(
-        $size: 20px,
-        $line: 1.58,
-        $col: $blue01
-    );
+@mixin title3 {
+  @include font($size: 20px, $line: 1.58, $op: 1);
+  color: $blue01;
 }
 
-@mixin title3_white {
-    @include font(
-        $size: 20px,
-        $line: 1.5,
-        $col: $white
-    );
-}
 // other fonts
 @mixin logo_text {
-    @include font(
-        $size: 28px,
-        $line: 1.64,
-        $letter: 0.02,
-        $col: $white
-    );
+  @include font($size: 28px, $line: 1.64, $letter: 0.02, $op: 1);
 }
 
 @mixin client_text {
-    @include font(
-        $size: 20px,
-        $line: 2.3,
-        $letter: 0.02,
-        $col: $white
-    );
+  @include font($size: 20px, $line: 2.3, $letter: 0.02, $op: 1);
+  color: $white;
 }
 
 @mixin btn_text {
-    @include font($letter: 0.04);
-    text-align: center;
+  @include font($letter: 0.04, $op: 1);
+  text-align: center;
 }
 
 @mixin more_text {
-    @include font(
-        $size: 14px,
-        $line: 2.14,
-        $col: $blue04
-    );
+  @include font($size: 14px, $line: 2.14);
+  color: $blue04;
 }
 
 @mixin nav-text {
-    @include font(
-        $size: 20px,
-        $line: 1.5,
-        $col: $blue02
-    );
+  @include font($size: 20px, $line: 1.5, $op: 1);
+  color: $blue02;
+}
+
+@mixin footer_title {
+  @include font($size: 20px, $line: 1.5, $op: 1);
+}
+
+@mixin footer_main_text {
+  @include font($op: 1);
 }
 
 @mixin sign_text {
-    @include font($op: 0.4);
+  @include font($op: 0.4);
 }
 
 @mixin form_text {
-    @include font(
-        $line: 1.87,
-        $letter: 0.04,
-        $col: $blue01,
-        $op: 0.8
-    );
+  @include font($line: 1.87, $letter: 0.04, $op: 0.8);
+  color: $blue01;
 }

@@ -1,6 +1,6 @@
 import env from '../../env.json';
 
-const drawClientsLogos = () => {
+const createClientsLogos = () => {
   const srcArr = env.clients.logosSrc;
   const clientsLogos = document.querySelector('.clients__logos');
 
@@ -15,4 +15,4 @@ const drawClientsLogos = () => {
 
   clientsLogos.insertAdjacentHTML('afterbegin', logosHtml);
 };
-export default drawClientsLogos;
+export default createClientsLogos;

@@ -1,19 +1,19 @@
 import './src/css/style.css';
-import drawHeaderNav from './src/modules/header/drawHeaderNav';
+import createHeaderNav from './src/modules/header/createHeaderNav';
 import handleHeaderMenu from './src/modules/header/handleHeaderMenu';
-import drawClientsLogos from './src/modules/clients/drawClientsLogos';
-import drawFooterNav from './src/modules/footer/drawFooterNav';
+import createClientsLogos from './src/modules/clients/createClientsLogos';
+import createFooterNav from './src/modules/footer/createFooterNav';
 import handleFooterScroll from './src/modules/footer/handleFooterScroll';
 import handleOpenPopup from './src/modules/popup/handleOpenPopup';
 import handleForm from './src/modules/form/handleForm';
 
 // header
-drawHeaderNav();
+createHeaderNav();
 handleHeaderMenu();
 // our clients
-drawClientsLogos();
+createClientsLogos();
 //footer
-drawFooterNav();
+createFooterNav();
 handleFooterScroll();
 //popup
 handleOpenPopup();

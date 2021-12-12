@@ -48,4 +48,11 @@
   &__text {
     max-width: 460px;
   }
+
+  &__title,
+  &__text {
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
 }

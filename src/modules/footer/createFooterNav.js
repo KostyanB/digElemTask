@@ -1,7 +1,7 @@
 import env from '../../env.json';
 import prepareListHtml from '../helpers/prepareListHtml';
 
-const drawFooterNav = () => {
+const createFooterNav = () => {
   const footerNavWrapper = document.querySelector('.footer__nav-wrapper');
   const navData = env.footer;
   const prefix = 'footer__';
@@ -25,4 +25,4 @@ const drawFooterNav = () => {
 
   footerNavWrapper.innerHTML = navHtml;
 };
-export default drawFooterNav;
+export default createFooterNav;

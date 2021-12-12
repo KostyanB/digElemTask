@@ -5,6 +5,7 @@ body {
     weight: 400;
     size: 16px;
   }
+  color: $white;
   min-width: 320px;
 }
 
@@ -13,66 +14,27 @@ body {
   margin: 0 auto;
 }
 
-.main-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 56px;
-  background-color: $blue04;
-  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+.card {
   border-radius: 10px;
-  @include btn_text;
+  border: none;
+  background-color: $white;
+  box-shadow: $card-shadow;
+}
 
-  &:hover,
-  &:active {
-    background-color: $blue03;
-  }
+.article {
+  display: flex;
+}
 
-  &:hover {
-    color: $blue05;
-  }
+.article-text {
+  @include main_text;
+}
 
-  &:active {
-    color: $blue01;
-  }
+.article-title {
+  @include title2;
 
-  &:disabled {
-    background-color: gray;
-    color: lightgray;
-
-    &:hover,
-    &:active {
-      background-color: gray;
-      color: lightgray;
-    }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
   }
 }
 
-.section {
-  &__article {
-    display: flex;
-  }
-
-  &__title {
-    @include title2_white;
-
-    @media (max-width: 768px) {
-      text-align: center;
-    }
-  }
-
-  &__text {
-    @include main_text_white;
-  }
-}
-
-.one {
-  height: 500px;
-  background-color: gray;
-
-}
-.two {
-  height: 1000px;
-  background-color: aquamarine;
-}

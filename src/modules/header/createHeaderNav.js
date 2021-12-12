@@ -1,7 +1,7 @@
 import env from '../../env.json';
 import prepareListHtml from '../helpers/prepareListHtml';
 
-const drawHeaderNav = () => {
+const createHeaderNav = () => {
   const headerNav = document.querySelector('.header__nav');
   const linksArr = env.header.navLinks;
 
@@ -10,4 +10,4 @@ const drawHeaderNav = () => {
     prefix: 'header__',
   });
 };
-export default drawHeaderNav;
+export default createHeaderNav;

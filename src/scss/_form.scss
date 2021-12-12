@@ -1,8 +1,9 @@
 .form {
 
   &__legend {
-    @include title3_blue;
+    @include title3;
     font-weight: 600;
+    color: $blue01;
   }
 
   &__label {
@@ -15,9 +16,8 @@
   &__name,
   &__email,
   &__msg,
-  &__button {
+  &__submit {
     width: min(95vw, 428px);
-
   }
 
   &__name,

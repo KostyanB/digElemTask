@@ -22,61 +22,72 @@
 				</svg>
 			</button>
 			<ul class="header__nav">
-				<!--! drawHeaderNav script -->
+				<!--! createHeaderNav script -->
 			</ul>
 		</div>
 	</header>
 	<!-- Main -->
-	<section class="main section">
-		<div class="main__container container" id="main">
-			<article class="main__article">
-				<h1 class="main__title">
+	<section class="projects section">
+		<div class="projects__container container" id="projects">
+			<article class="projects__article">
+				<h1 class="projects__title">
 					New Automation Tool for Your Home
 				</h1>
-				<main class="main__text">
+				<p class="projects__text article-text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris
 					tellus at. Posuere sollicitudin odio tellus elit.
-				</main>
-				<button class="main__btn main-button">See Our Project</button>
+				</p>
+				<button class="projects__btn main-button">See Our Project</button>
 			</article>
-			<img src="./src/img/illustration.svg" alt="" class="main__illustration">
+			<img src="./src/img/illustration.svg" alt="" class="projects__illustration">
+		</div>
+	</section>
+	<!-- What we help -->
+	<section class="what-help" id="what-help">
+		<div class="what-help__container container">
+			<h2 class="what-help__title article-title">
+				What we do to help our client grow in digital era,
+			</h2>
+			<div class="what-help__cards">
+
+			</div>
+
 		</div>
 	</section>
 	<!-- Our clients -->
 	<section class="clients section" id="our-clients">
 		<div class="clients__container container">
-			<article class="clients__article section__article">
-				<h1 class="clients_title section__title">
+			<article class="clients__article article">
+				<h1 class="clients__title article-title">
 					Our Beloved Client
 				</h1>
-				<main class="clients__text section__text">
+				<p class="clients__text article-text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					magna aliqua. Ut enim ad minim veniam.
-				</main>
+				</p>
 			</article>
 			<ul class="clients__logos">
-				<!-- ! drawClientsLogos script-->
+				<!-- ! createClientsLogos script-->
 				<li class="clients__item">
 					<button class="clients__btn">
 						More Client
 					</button>
 				</li>
 			</ul>
-
 		</div>
 	</section>
 	<!-- lets-talk -->
 	<section class="lets-talk section" id="lets-talk">
 		<div class="lets-talk__container container">
 			<div class="lets-talk__subcontainer">
-				<article class="lets-talk__article section__article">
-					<h1 class="lets-talk__title section__title">
+				<article class="lets-talk__article article">
+					<h1 class="lets-talk__title article-title">
 						Intersted to woek with our team?
 					</h1>
-					<main class="lets-talk__text section__text">
+					<p class="lets-talk__text article-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna aliqua. Ut enim ad minim veniam.
-					</main>
+					</p>
 				</article>
 				<button class="lets-talk__btn main-button">
 					Let’s Talk
@@ -122,7 +133,7 @@
 						</ul>
 					</div>
 					<nav class="footer__nav-wrapper">
-						<!--! drawFooterNav script -->
+						<!--! createFooterNav script -->
 					</nav>
 				</div>
 				<p class="footer__sign">
@@ -134,9 +145,9 @@
 	<!-- Popup form -->
 	<div class="popup" id="send">
 		<div class="popup__overlay" id="send-popup">
-			<div class="popup__wrapper">
+			<div class="popup__wrapper card">
+				<button class="popup__close close-button"></button>
 				<div class="popup__content">
-					<button class="popup__close"></button>
 					<form class="popup__form form" name="popup__form" id="popup__form">
 						<legend class="form__legend">SEND US MESSAGE</legend>
 						<label for="form__name" class="form__label">
@@ -151,7 +162,7 @@
 							Message
 							<textarea class="form__msg" id="form__msg" name="form__msg"></textarea>
 						</label>
-						<button class="form__button main-button" type="submit" form="popup__form" disabled>SUBMIT</button>
+						<button class="form__submit main-button" type="submit" form="popup__form" disabled>SUBMIT</button>
 					</form>
 				</div>
 			</div>
@@ -160,10 +171,10 @@
 	</div>
 	<div class="popup" id="message">
 		<div class="popup__overlay" id="message-popup">
-			<div class="popup__wrapper">
+			<div class="popup__wrapper card">
+				<button class="popup__close close-button"></button>
 				<div class="popup__content">
-					<button class="popup__close"></button>
-					<h3 class="popup__message"></h3>
+					<p class="popup__message"></p>
 				</div>
 			</div>
 		</div>

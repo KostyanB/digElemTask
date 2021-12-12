@@ -37,7 +37,7 @@
     column-gap: 16px;
     max-width: 299px;
 
-    @include main_text_footer;
+    @include footer_main_text;
 
     span {
       font-weight: 600;
