@@ -1,5 +1,6 @@
 import openPopup from '../popup/openPopup';
 import closePopup from '../popup/closePopup';
+import env from '../../env.json';
 
 const showSendResult = (status, text) => {
   const messagePopup = document.getElementById('message-popup');
@@ -12,7 +13,7 @@ const showSendResult = (status, text) => {
     setTimeout(() => {
       closePopup(messagePopup);
       popupMessage.classList.remove('error-send');
-    }, 5000);
+    }, env.autoclose);
   };
 
   if (!status) popupMessage.classList.add('error-send');

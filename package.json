@@ -1,5 +1,5 @@
 {
-  "name": "test-task",
+  "name": "dig-elem-test-task",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KostyanB/"
+    "url": "git+https://github.com/KostyanB/digElemTask"
   },
   "keywords": [],
   "author": "Konstantin Berezko",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/KostyanB/"
   },
-  "homepage": "https://github.com/KostyanB/",
+  "homepage": "https://github.com/KostyanB/digElemTask",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "D": "^1.0.0",
