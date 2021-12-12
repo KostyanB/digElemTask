@@ -15,10 +15,14 @@ const handleSubmitBtn = () => {
   }
 };
 
-const validForm = target => {
-  if (target.name === 'form__msg') checkObj.msgCheck = validMessageField(target);
-  if (target.name === 'form__name') checkObj.nameCheck = validNameField(target);
-  if (target.name === 'form__email') checkObj.emailCheck = validEmailField(target);
+const validForm = () => {
+  const form = document.forms.popup__form;
+
+  [...form].slice(0, form.length - 1).forEach(item => {
+    if (item.name === 'form__msg') checkObj.msgCheck = validMessageField(item);
+    if (item.name === 'form__name') checkObj.nameCheck = validNameField(item);
+    if (item.name === 'form__email') checkObj.emailCheck = validEmailField(item);
+  });
 
   handleSubmitBtn();
 };
