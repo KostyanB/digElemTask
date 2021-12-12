@@ -1,108 +1,38 @@
 <svg width="0" height="0" class="hidden">
+  <symbol id="close" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <title id="close-title">Close</title>
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
+  </symbol>
+
   <symbol id="arrow" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-    <title id="arrow-title">More</title>
-    <path fill="#5A98D0" d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"></path>
+    <title id="arrow-title">Learn more</title>
+    <path fill="currentColor" d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z">
+    </path>
   </symbol>
 
   <symbol id="menu" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
     <title id="menu-title">Menu</title>
-    <path fill="currentColor" d="M4 24H28V21.3333H4V24ZM4 17.3333H28V14.6667H4V17.3333ZM4 8V10.6667H28V8H4Z"></path>
+    <path fill="currentColor" d="M4 24H28V21.3333H4V24ZM4 17.3333H28V14.6667H4V17.3333ZM4 8V10.6667H28V8H4Z">
+    </path>
   </symbol>
 
   <symbol id="logo" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 32">
-    <title id="logo-title">Logo</title>
+    <title id="logo-title">Afrianska</title>
     <circle id="logo-disk" cx="16" cy="16" r="16"></circle>
     <circle cx="32" cy="16" r="15" fill="#FFF" stroke="currentColor" stroke-width="2"></circle>
-    <path fill="currentColor" d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z"></path>
+    <path fill="currentColor" d="M39.3 22L34.38 8H30.96L26.06 22H29.04L29.88 19.48H35.46L36.3 22H39.3ZM32.68 11.18L34.6 16.9H30.76L32.68 11.18Z">
+    </path>
   </symbol>
 
   <symbol id="logo2" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 32">
-    <title id="logo2-title">Logo</title>
+    <title id="logo2-title">Afrianska</title>
     <circle cx="16" cy="16" r="16" fill="#98C3E8"></circle>
     <circle cx="32" cy="16" r="15" fill="#FFF" stroke="#316099" stroke-width="2"></circle>
-    <path fill="#316099" d="M38.3 23L33.38 9H29.96L25.06 23H28.04L28.88 20.48H34.46L35.3 23H38.3ZM31.68 12.18L33.6 17.9H29.76L31.68 12.18Z"></path>
+    <path fill="#316099" d="M38.3 23L33.38 9H29.96L25.06 23H28.04L28.88 20.48H34.46L35.3 23H38.3ZM31.68 12.18L33.6 17.9H29.76L31.68 12.18Z">
+    </path>
   </symbol>
 
-  <symbol id="camera" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 71">
-    <title id="camera-title">camera</title>
-    <g filter="url(#filter0_d_0_1684)">
-      <path fill="#6FCF97" d="M44.2843 10H16.8538C13.0686 10 10 13.0475 10 16.8068V44.0493C10 47.8086 13.0686 50.8561 16.8538 50.8561H44.2843C48.0696 50.8561 51.1381 47.8086 51.1381 44.0493V16.8068C51.1381 13.0475 48.0696 10 44.2843 10Z"></path>
-    </g>
-    <path fill="#FFF" d="M36.3108 24.8965H19.9795V35.1033H36.3108V24.8965Z"></path>
-    <path fill="#FFF" d="M40.7128 26.9276L37.1084 28.4427V31.6003L40.7128 33.1153H42.0204V26.9276H40.7128Z"></path>
-    <defs>
-      <filter id="filter0_d_0_1684" x="0" y="0" width="71.1377" height="70.8561" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-        <feOffset dx="5" dy="5"></feOffset>
-        <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1684"></feBlend>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1684" result="shape"></feBlend>
-      </filter>
-    </defs>
-  </symbol>
 
-  <symbol id="lamp" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 71">
-    <title id="lamp-title">Lamp</title>
-    <g filter="url(#filter0_d_0_1676)">
-      <path fill="#F2C94C" d="M44.2844 10H16.8538C13.0685 10 10 13.0475 10 16.8068V44.0493C10 47.8086 13.0685 50.8561 16.8538 50.8561H44.2844C48.0696 50.8561 51.1381 47.8086 51.1381 44.0493V16.8068C51.1381 13.0475 48.0696 10 44.2844 10Z"></path>
-    </g>
-    <path fill="#FFF" d="M40 27C40 22 36 18 31 18C26 18 22 22 22 27C22 30.1 23.6 32.9 26 34.5V37C26 38.3 26.8 39.4 28 39.8V40C28 41.7 29.3 43 31 43C32.7 43 34 41.7 34 40V39.8C35.2 39.4 36 38.3 36 37V34.5C38.4 32.9 40 30.1 40 27ZM24 27C24 23.1 27.1 20 31 20C34.9 20 38 23.1 38 27C38 30.5 35.4 33.4 32 33.9V31.4L33.7 29.7C34.1 29.3 34.1 28.7 33.7 28.3C33.3 27.9 32.7 27.9 32.3 28.3L31 29.6L29.7 28.3C29.3 27.9 28.7 27.9 28.3 28.3C27.9 28.7 27.9 29.3 28.3 29.7L30 31.4V33.9C26.6 33.4 24 30.5 24 27ZM31 41C30.4 41 30 40.6 30 40H32C32 40.6 31.6 41 31 41ZM34 37C34 37.6 33.6 38 33 38H29C28.4 38 28 37.6 28 37V35.5C28.9 35.8 29.9 36 31 36C32.1 36 33.1 35.8 34 35.5V37Z" ></path>
-    <defs>
-      <filter id="filter0_d_0_1676" x="0" y="0" width="71.1377" height="70.8561" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-        <feOffset dx="5" dy="5"></feOffset>
-        <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1676"></feBlend>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1676" result="shape"></feBlend>
-      </filter>
-    </defs>
-  </symbol>
-
-  <symbol id="lock" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 71">
-    <title id="lock-title">Lock</title>
-    <g filter="url(#filter0_d_0_1679)">
-      <path fill="#F58A8A" d="M44.2844 10H16.8538C13.0685 10 10 13.0475 10 16.8068V44.0493C10 47.8086 13.0685 50.8561 16.8538 50.8561H44.2844C48.0696 50.8561 51.1381 47.8086 51.1381 44.0493V16.8068C51.1381 13.0475 48.0696 10 44.2844 10Z"></path>
-    </g>
-    <path fill="#FFF" d="M37 27H36V25C36 22.24 33.76 20 31 20C28.24 20 26 22.24 26 25V27H25C23.9 27 23 27.9 23 29V39C23 40.1 23.9 41 25 41H37C38.1 41 39 40.1 39 39V29C39 27.9 38.1 27 37 27ZM31 36C29.9 36 29 35.1 29 34C29 32.9 29.9 32 31 32C32.1 32 33 32.9 33 34C33 35.1 32.1 36 31 36ZM34.1 27H27.9V25C27.9 23.29 29.29 21.9 31 21.9C32.71 21.9 34.1 23.29 34.1 25V27Z"></path>
-    <defs>
-      <filter id="filter0_d_0_1679" x="0" y="0" width="71.1377" height="70.8561" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-        <feOffset dx="5" dy="5"></feOffset>
-        <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1679"></feBlend>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1679" result="shape"></feBlend>
-      </filter>
-    </defs>
-  </symbol>
-
-  <symbol id="snow" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 71">
-    <title id="snow-title">Snow</title>
-    <g filter="url(#filter0_d_0_1671)">
-      <path fill="#56CCF2" d="M44.423 10H16.9925C13.2072 10 10.1387 13.0475 10.1387 16.8068V44.0493C10.1387 47.8086 13.2072 50.8561 16.9925 50.8561H44.423C48.2083 50.8561 51.2768 47.8086 51.2768 44.0493V16.8068C51.2768 13.0475 48.2083 10 44.423 10Z"></path>
-    </g>
-    <path fill="#FFF" d="M41 29H36.83L40.07 25.76L38.66 24.34L34 29H32V27L36.66 22.34L35.24 20.93L32 24.17V20H30V24.17L26.76 20.93L25.34 22.34L30 27V29H28L23.34 24.34L21.93 25.76L25.17 29H21V31H25.17L21.93 34.24L23.34 35.66L28 31H30V33L25.34 37.66L26.76 39.07L30 35.83V40H32V35.83L35.24 39.07L36.66 37.66L32 33V31H34L38.66 35.66L40.07 34.24L36.83 31H41V29Z"></path>
-    <defs>
-      <filter id="filter0_d_0_1671" x="0.138672" y="0" width="71.1377" height="70.8561" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-        <feOffset dx="5" dy="5"></feOffset>
-        <feGaussianBlur stdDeviation="7.5"></feGaussianBlur>
-        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1671"></feBlend>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1671" result="shape"></feBlend>
-      </filter>
-    </defs>
-  </symbol>
 </svg>
-
-<!--
-  <svg class="icon">
-    <use xlink:href="#snow"></use>
-  </svg>
--->

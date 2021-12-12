@@ -1,19 +1,3 @@
-export const validMessageField = elem => {
-  const changedSymbols = [' ', '-', ',', ';', ':', '.'];
-  const changeRegExp = [/\s+/gm, /-+/gm, /,+/gm, /;+/gm, /:+/gm, /\.+/gm];
-
-  changedSymbols.forEach((item, i) => {
-    elem.value = elem.value.replace(changeRegExp[i], item);
-  });
-
-  if (elem.value === ' ' || elem.value === '') {
-    elem.value = '';
-    return false;
-  } else {
-    return true;
-  }
-};
-
 // валидация user name
 export const validNameField = elem => {
   const user = elem.value.replace(/\s+/g, ' ');
@@ -38,6 +22,23 @@ export const validEmailField = elem => {
   const emailChecker = /^[\w\-\.\!\~\*\']+@[\w\-\.\!\~\*\']+(\.[a-z]{2,})$/;
 
   if (!emailChecker.test(elem.value)) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+// Валидация message
+export const validMessageField = elem => {
+  const changedSymbols = [' ', '-', ',', ';', ':', '.'];
+  const changeRegExp = [/\s+/gm, /-+/gm, /,+/gm, /;+/gm, /:+/gm, /\.+/gm];
+
+  changedSymbols.forEach((item, i) => {
+    elem.value = elem.value.replace(changeRegExp[i], item);
+  });
+
+  if (elem.value === ' ' || elem.value === '') {
+    elem.value = '';
     return false;
   } else {
     return true;

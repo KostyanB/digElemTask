@@ -2,6 +2,10 @@
   &__container {
     background-color: $blue04;
     padding-right: min(7vw, 96px);
+
+    @media (max-width: 768px) {
+      padding-right: 0;
+    }
   }
 
   &__subcontainer {
@@ -11,21 +15,26 @@
     column-gap: clamp(20px, 13vw, 180px);
     background-color: $blue02;
     @include paddings;
-    // padding-top: 91px;
-    // padding-right: clamp(20px, 15vw, 213px);
+    padding-top: 96px;
     padding-bottom: 96px;
-    // padding-left: clamp(20px, 15vw, 213px);
     border-top-right-radius: 200px;
 
+    @media (max-width: 990px) {
+      border-top-right-radius: 150px;
+    }
+
     @media (max-width: 768px) {
-      // padding-left: 20px;
-      // padding-right: 20px;
       flex-direction: column;
       row-gap: 20px;
+      border-top-right-radius: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     @media (max-width: 576px) {
-      border-top-right-radius: 100px;
+      border-top-right-radius: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 
