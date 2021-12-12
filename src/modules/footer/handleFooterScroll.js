@@ -1,11 +1,17 @@
 import smoothScroll from '../helpers/smoothScroll';
 
 const handleFooterScroll = () => {
+  const footer = document.getElementById('footer');
 
-  const handleFooterLinks = e =>
-    (e.target.classList.contains('contacts__logo-link')) && smoothScroll(e);
+  const handleFooterLinks = e => {
+    if (e.target.classList.contains('contacts__logo-link') ||
+      (e.target.tagName === 'A' && e.target.getAttribute('href')?.charAt(0) === '#')) {
+      smoothScroll(e);
+    } else {
+      return;
+    }
+  };
 
-  document.addEventListener('click', e => handleFooterLinks(e));
-
-}
+  footer.addEventListener('click', e => handleFooterLinks(e));
+};
 export default handleFooterScroll;
