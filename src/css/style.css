@@ -165,7 +165,6 @@ textarea {
   display: none;
 }
 
-/* end reset */
 /* шрифты*/
 @font-face {
   font-family: "Gilroy";
@@ -179,6 +178,7 @@ textarea {
   font-weight: 400;
   font-style: normal;
 }
+/* global styles*/
 body {
   font-family: Gilroy;
   font-style: normal;
@@ -227,6 +227,7 @@ body {
   }
 }
 
+/* Buttons */
 .main-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +326,7 @@ body {
   height: 24px;
 }
 
+/* Header */
 .header {
   padding-top: 40px;
 }
@@ -423,6 +425,7 @@ body {
   transition: all 0.5s;
 }
 
+/* Projects */
 .projects__container {
   display: grid;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #98c3e8), color-stop(31.12%, rgba(152, 195, 232, 0)));
@@ -536,6 +539,7 @@ body {
   }
 }
 
+/* What-we-do */
 .what-we-do__container {
   display: grid;
   -webkit-box-pack: stretch;
@@ -731,6 +735,7 @@ body {
   color: #5a98d0;
 }
 
+/* Clients */
 .clients__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,6 +882,7 @@ body {
   color: #1f3f68;
 }
 
+/* Lets-talk */
 .lets-talk__container {
   background-color: #5a98d0;
   padding-right: min(7vw, 96px);
@@ -969,6 +975,7 @@ body {
   }
 }
 
+/* Footer */
 .footer__container {
   background-color: #5a98d0;
   padding-right: min(7vw, 96px);
@@ -1115,6 +1122,7 @@ body {
   }
 }
 
+/* Сontacts */
 .contacts__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,6 +1197,7 @@ body {
   color: #98c3e8;
 }
 
+/* Popup */
 .popup__overlay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1286,6 +1295,7 @@ body {
   color: #ff004c;
 }
 
+/* Form */
 .form__legend {
   font-size: 20px;
   line-height: 1.58;

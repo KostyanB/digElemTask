@@ -5,7 +5,8 @@ const handleFooterScroll = () => {
 
   const handleFooterLinks = e => {
     if (e.target.classList.contains('contacts__logo-link') ||
-      (e.target.tagName === 'A' && e.target.getAttribute('href')?.charAt(0) === '#')) {
+      (e.target.tagName === 'A' && e.target.getAttribute('href')?.charAt(0) === '#'))
+    {
       smoothScroll(e);
     } else {
       return;

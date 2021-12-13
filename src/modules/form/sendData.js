@@ -19,7 +19,7 @@ const sendData = async form => {
     form.reset();
     showSendResult(true);
   } catch (err) {
-    showSendResult(false, err.message);
+    showSendResult(false, `Sorry, error: ${err.message}`);
   } finally {
     closePopup(form.closest('.popup__overlay'));
   }
