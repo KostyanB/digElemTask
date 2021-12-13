@@ -59,7 +59,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1px;
-    background-color: $white;
+    background-color: $border-color;
 
     @media (max-width: 990px) {
       grid-template-columns: repeat(2, 1fr);

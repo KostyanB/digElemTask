@@ -814,7 +814,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1px;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 @media (max-width: 990px) {
   .clients__logos {
@@ -1026,8 +1026,7 @@ body {
   left: 0;
   width: min(84.5%, 1073px);
   height: 0px;
-  border-top: 1px solid #FFF;
-  opacity: 0.4;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 .footer__wrapper {
   display: -webkit-box;
