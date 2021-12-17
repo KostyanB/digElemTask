@@ -2,7 +2,7 @@ import env from '../../env.json';
 import showSendResult from './showSendResult';
 import closePopup from '../popup/closePopup';
 
-const sendData = async form => {
+const sendUserData = async form => {
   const body = new FormData(form);
 
   try {
@@ -24,4 +24,4 @@ const sendData = async form => {
     closePopup(form.closest('.popup__overlay'));
   }
 };
-export default sendData;
+export default sendUserData;

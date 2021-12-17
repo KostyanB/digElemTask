@@ -1,5 +1,4 @@
-// валидация user name
-export const validNameField = elem => {
+export const validateUserNameField = elem => {
   const user = elem.value.replace(/\s+/g, ' ');
 
   if (user.length === 0) {
@@ -16,8 +15,7 @@ export const validNameField = elem => {
   }
 };
 
-// Валидация e-mail
-export const validEmailField = elem => {
+export const validateEmailField = elem => {
   elem.value = elem.value.replace(/[а-яёА-ЯЁ\s+]/g, '');
   const emailChecker = /^[\w\-\.\!\~\*\']+@[\w\-\.\!\~\*\']+(\.[a-z]{2,})$/;
 
@@ -28,8 +26,7 @@ export const validEmailField = elem => {
   }
 };
 
-// Валидация message
-export const validMessageField = elem => {
+export const validateMessageField = elem => {
   const changedSymbols = [' ', '-', ',', ';', ':', '.'];
   const changeRegExp = [/\s+/gm, /-+/gm, /,+/gm, /;+/gm, /:+/gm, /\.+/gm];
 

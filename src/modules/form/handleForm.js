@@ -1,5 +1,5 @@
-import sendData from './sendData';
-import validForm from './validForm';
+import sendUserData from './sendUserData';
+import validateForm from './validateForm';
 
 const handleForm = () => {
   const form = document.forms.popup__form;
@@ -7,12 +7,12 @@ const handleForm = () => {
 
   const sendForm = (e) => {
     e.preventDefault();
-    sendData(form);
+    sendUserData(form);
   };
 
   form.addEventListener('submit', sendForm);
-  form.addEventListener('change', validForm);
-  form.addEventListener('input', validForm);
-  form.addEventListener('paste', validForm);
+  form.addEventListener('change', validateForm);
+  form.addEventListener('input', validateForm);
+  form.addEventListener('paste', validateForm);
 };
 export default handleForm;

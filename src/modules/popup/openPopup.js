@@ -1,10 +1,10 @@
 import disableScroll from '../helpers/disableScroll';
-import validForm from '../form/validForm';
+import validateForm from '../form/validateForm';
 
 const openPopup = overlay => {
 	overlay.classList.add('popup__overlay-open');
 
   disableScroll();
-  validForm();
+  validateForm();
 };
 export default openPopup;
