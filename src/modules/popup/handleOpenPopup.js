@@ -5,16 +5,17 @@ const handleOpenPopup = () => {
   let targetPopup;
 
   const checkTarget = elem => {
-    if (elem.classList.contains('popup__close')) {
-      // клик по button close
+    const isBtnClose = elem.classList.contains('popup__close');
+    const isOverlay = elem.classList.contains('popup__overlay');
+    const isBtnLetsTalk = elem.classList.contains('lets-talk__btn');
+
+    if (isBtnClose) {
       targetPopup = elem.closest('.popup__overlay');
       closePopup(targetPopup);
-    } else if (elem.classList.contains('popup__overlay')) {
-      // клик по overlay
+    } else if (isOverlay) {
       targetPopup = elem;
       closePopup(targetPopup);
-    } else if (elem.classList.contains('lets-talk__btn')) {
-      //  клик по button let's talk
+    } else if (isBtnLetsTalk) {
       targetPopup = document.getElementById('send-popup');
       openPopup(targetPopup);
     } else {
@@ -22,10 +23,12 @@ const handleOpenPopup = () => {
     }
   };
 
-  document.addEventListener('click', e => checkTarget(e.target));
+  document.addEventListener('click', event => checkTarget(event.target));
 
-  document.addEventListener('keydown', e => {
-    (e.repeat === false && e.code === 'Escape') && closePopup(targetPopup);
+  document.addEventListener('keydown', event => {
+    const isEscape = event.repeat === false && event.code === 'Escape';
+
+    if (isEscape) closePopup(targetPopup);
   });
 };
 export default handleOpenPopup;

@@ -1,6 +1,6 @@
-const smoothScroll = e => {
-  e.preventDefault();
-  const id = e.target.getAttribute('href');
+const smoothScroll = event => {
+  event.preventDefault();
+  const id = event.target.getAttribute('href');
 
   document.querySelector(id).scrollIntoView({
     behavior: 'smooth',

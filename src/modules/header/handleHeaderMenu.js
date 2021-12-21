@@ -7,20 +7,22 @@ const handleHeaderMenu = () => {
 
   const closeMenu = () => headerNav.classList.remove('isOpen');
 
-  const handleMenu = e => {
-    //клик по кнопке меню
-    (e.target.closest('.header__menu')) && toggleMenu();
-
-    //клик мимо меню и не по кнопке
-    (!e.target.closest('.header__nav') && !e.target.closest('.header__menu')) && closeMenu();
-
-    //клик по ссылке меню
-    if (e.target.classList.contains('header__nav-link')) {
-      closeMenu();
-      smoothScroll(e);
-    }
+  const closeAndScroll = event => {
+    closeMenu();
+    smoothScroll(event);
   };
 
-  document.addEventListener('click', e => handleMenu(e));
+  const handleMenu = event => {
+    const target = event.target;
+    const isMenuBtnClick = target.closest('.header__menu');
+    const isPastMenuClick = !target.closest('.header__nav') && !target.closest('.header__menu');
+    const isLinkClick = target.classList.contains('header__nav-link');
+
+    isMenuBtnClick && toggleMenu();
+    isPastMenuClick && closeMenu();
+    isLinkClick && closeAndScroll(event);
+  };
+
+  document.addEventListener('click', event => handleMenu(event));
 }
 export default handleHeaderMenu;

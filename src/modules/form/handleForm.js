@@ -5,8 +5,8 @@ const handleForm = () => {
   const form = document.forms.popup__form;
 
 
-  const sendForm = (e) => {
-    e.preventDefault();
+  const sendForm = event => {
+    event.preventDefault();
     sendUserData(form);
   };
 
