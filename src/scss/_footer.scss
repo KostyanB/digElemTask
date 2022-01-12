@@ -10,9 +10,18 @@
   }
 
   &__subcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 64px;
     position: relative;
@@ -35,7 +44,7 @@
   }
 
   &__border {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: min(84.5%, 1073px);
@@ -45,35 +54,59 @@
   }
 
   &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: min(7.3vw, 100px);
+    -moz-column-gap: min(7.3vw, 100px);
     column-gap: min(7.3vw, 100px);
 
     @media (max-width: 768px) {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       row-gap: 40px;
       width: 100%;
     }
   }
 
-    &__nav-wrapper {
-    display:flex;
+  &__nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: clamp(10px, 5.6vw, 77px);
+    -moz-column-gap: clamp(10px, 5.6vw, 77px);
     column-gap: clamp(10px, 5.6vw, 77px);
 
     @media (max-width: 576px) {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       width: 90%;
     }
   }
 
-  &__nav-list{
+  &__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     row-gap: 16px;
   }
 
   &__nav-item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
   }
 
@@ -88,6 +121,10 @@
 
   &__nav-title {
     @include footer_title;
+
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
 
     width: max-content;
     margin-bottom: 32px;

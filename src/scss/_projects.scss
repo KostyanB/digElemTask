@@ -2,6 +2,14 @@
 .projects {
   &__container {
     display: grid;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(8.84%, rgb(152, 195, 232)),
+      color-stop(31.12%, rgba(152, 195, 232, 0))
+    );
+    background: -o-linear-gradient(bottom, rgb(152, 195, 232) 8.84%, rgba(152, 195, 232, 0) 31.12%);
     background: linear-gradient(0deg, rgb(152, 195, 232) 8.84%, rgba(152, 195, 232, 0) 31.12%);
     padding-top: 11px;
     padding-left: $clamp;
@@ -16,7 +24,12 @@
 
   &__article {
     grid-area: 1/-1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 89px;
 
@@ -29,6 +42,8 @@
     }
 
     @media (max-width: 768px) {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       padding-top: 30px;
       padding-right: 0;
@@ -81,7 +96,7 @@
 
     @media (max-width: 768px) {
       width: 100%;
-      opacity: .6;
+      opacity: 0.6;
     }
   }
 }

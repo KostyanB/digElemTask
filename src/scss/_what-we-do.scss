@@ -2,18 +2,29 @@
 .what-we-do {
   &__container {
     display: grid;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
     justify-content: stretch;
     @include paddings;
     padding-top: 180px;
     padding-bottom: 212px;
 
     @media (max-width: 1366px) {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
     }
 
     @media (max-width: 830px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       gap: 30px;
       padding-top: 50px;
@@ -47,12 +58,14 @@
     place-self: start end;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: clamp(10px, 7.3vw, 100px);
+    -moz-column-gap: clamp(10px, 7.3vw, 100px);
     column-gap: clamp(10px, 7.3vw, 100px);
     row-gap: 100px;
 
     .card1 {
       grid-column: 1;
-      grid-row: 1/span 2;
+      grid-row: 1 / span 2;
       align-self: center;
 
       img {
@@ -93,21 +106,37 @@
     }
 
     @media (max-width: 990px) {
+      -webkit-column-gap: clamp(10px, 5vw, 50px);
+      -moz-column-gap: clamp(10px, 5vw, 50px);
       column-gap: clamp(10px, 5vw, 50px);
       row-gap: 50px;
     }
 
     @media (max-width: 830px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-column-gap: 0;
+      -moz-column-gap: 0;
       column-gap: 0;
     }
   }
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 380px;
   padding: 48px;
@@ -120,6 +149,7 @@
   }
 
   &__image {
+    -ms-flex-item-align: center;
     align-self: center;
     position: relative;
     width: 132px;
@@ -131,7 +161,6 @@
   &__title {
     margin-top: 56px;
     @include title3;
-
   }
 
   &__text {
@@ -141,6 +170,7 @@
   }
 
   &__button {
+    -ms-flex-item-align: baseline;
     align-self: baseline;
     margin-top: 32px;
     @include more_text;

@@ -1,8 +1,14 @@
 /* Popup */
 .popup {
   &__overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: fixed;
     top: 0;
@@ -14,21 +20,30 @@
     z-index: 1000;
     overflow-y: auto;
     background: $overlay;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     visibility: hidden;
 
     div {
       opacity: 0;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
       transform: scale(0);
     }
 
     &-open {
       visibility: visible;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
       transition: opacity 0.5s;
 
       div {
         opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
         transform: scale(1);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
       }
     }
@@ -69,7 +84,12 @@
   }
 
   &__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 32px;
   }

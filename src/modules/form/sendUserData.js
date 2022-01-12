@@ -3,15 +3,12 @@ import showSendResult from './showSendResult';
 import closePopup from '../popup/closePopup';
 
 const sendUserData = async form => {
-  const body = new FormData(form);
+  const formData = new FormData(form);
 
   try {
     const response = await fetch(env.backend, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body)
+      body: formData
     });
 
     if (!response.ok) throw new Error(`Server error`);

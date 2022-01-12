@@ -19,10 +19,13 @@ body {
   border-radius: 10px;
   border: none;
   background-color: $white;
+  -webkit-box-shadow: $card-shadow;
   box-shadow: $card-shadow;
 }
 
 .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 

@@ -1,4 +1,4 @@
-import './src/css/style.css';
+import './src/scss/style.scss';
 import createHeaderNav from './src/modules/header/createHeaderNav';
 import handleHeaderMenu from './src/modules/header/handleHeaderMenu';
 import createClientsLogos from './src/modules/clients/createClientsLogos';

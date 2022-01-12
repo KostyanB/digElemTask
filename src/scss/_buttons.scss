@@ -1,11 +1,18 @@
 /* Buttons */
 .main-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 220px;
   height: 56px;
   background-color: $blue04;
+  -webkit-box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border-radius: 10px;
   @include btn_text;
@@ -41,13 +48,17 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     display: block;
     border-bottom: 1px solid $blue02;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
   &::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
@@ -60,17 +71,31 @@
 }
 
 .more-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
   column-gap: 24px;
   // width: 127px;
   height: 30px;
   color: $blue04;
+  -webkit-transition: -webkit-column-gap 0.3s;
+  transition: -webkit-column-gap 0.3s;
+  -o-transition: column-gap 0.3s;
   transition: column-gap 0.3s;
+  transition: column-gap 0.3s, -webkit-column-gap 0.3s, -moz-column-gap 0.3s;
 
   &:hover,
   &:active {
+    -webkit-column-gap: 36px;
+    -moz-column-gap: 36px;
     column-gap: 36px;
   }
 
